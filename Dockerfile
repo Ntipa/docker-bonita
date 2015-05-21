@@ -1,6 +1,6 @@
 FROM java:openjdk-8
 
-MAINTAINER Wellington Marinho wpmarinho@globo.com
+MAINTAINER Tindaro Tornabene<tindaro.tornabene@gmail.com>
 
 ENV BONITA_VERSION 6.5.1
 ENV TOMCAT_VERSION 7.0.55
