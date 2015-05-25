@@ -22,8 +22,8 @@ sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 
 ## Deploy Bonita
 <pre>
-docker pull wmarinho/bonita
-docker run  --name=bonita -d  -p 8080:8080  wmarinho/bonita
+docker pull tornabene/bonita
+docker run  --name=bonita -d  -p 8080:8080  tornabene/bonita
 </pre>
 
 http://[ip_address]:8080/bonita
@@ -36,15 +36,15 @@ http://[ip_address]:8080/bonita
 sudo git clone https://github.com/wmarinho/docker-bonita.git
 cd docker-bonita
 sudo vi Dockerfile
-sudo docker build -t myimage/bonita:mytag .
+sudo docker build -t tornabene/bonita .
 sudo docker images
-sudo docker run -p 8080:8080 -d myimage/bonita:mytag
+sudo docker run -p 8080:8080 -d tornabene/bonita
 </pre>
 
 Or run in interactive mode
 
 <pre>
-sudo docker run -p 8080:8080 -i -t myimage/bonita:mytag /bin/bash
+sudo docker run -p 8080:8080 -i -t tornabene/bonita /bin/bash
 </pre>
 
 Please see [Dockerfile Reference] (https://docs.docker.com/reference/builder/) for additional information.
